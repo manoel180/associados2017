@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -jar target/dependencey/webapp-runner.jar --port $PORT target/*.war
