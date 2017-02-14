@@ -17,3 +17,5 @@ target/
 .checkstyle
 
 .settings/
+
+node_modules/
