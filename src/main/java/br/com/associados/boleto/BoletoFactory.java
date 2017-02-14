@@ -1,20 +1,5 @@
 package br.com.associados.boleto;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
-import org.springframework.http.HttpEntity;
-
 import br.com.associados.entities.Lote;
 import br.com.associados.service.CadastroService;
 import br.com.caelum.stella.boleto.Banco;
@@ -25,6 +10,20 @@ import br.com.caelum.stella.boleto.Pagador;
 import br.com.caelum.stella.boleto.bancos.BancoDoBrasil;
 import br.com.caelum.stella.boleto.transformer.GeradorDeBoleto;
 import br.com.caelum.stella.boleto.utils.StellaStringUtils;
+
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.HttpEntity;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class BoletoFactory {
 
@@ -40,7 +39,7 @@ public class BoletoFactory {
 	    throws IOException {
 
 	// Quem paga o boleto
-	Pagador pagador = Pagador.novoPagador().comNome("Eu amo a minha igreja");
+	Pagador pagador = Pagador.novoPagador().comNome("Oferta para Jerusalém");
 
 	Banco banco = new BancoDoBrasil();
 	List<Boleto> boletos = new ArrayList<Boleto>();
