@@ -104,7 +104,7 @@ public class BoletoFactory {
 
 
 	GeradorDeBoleto gerador;
-	InputStream templateBoleto = new FileInputStream(resource.getFile());
+	InputStream templateBoleto = resource.getInputStream();
 	gerador = new GeradorDeBoleto(templateBoleto, parametros, boletosLote);
 	byte[] bPDF = gerador.geraPDF();
 	GenerateBoleto generateBoleto = new GenerateBoleto();
