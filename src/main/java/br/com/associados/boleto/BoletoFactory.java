@@ -39,7 +39,7 @@ public class BoletoFactory {
 	    throws IOException {
 
 	// Quem paga o boleto
-	Pagador pagador = Pagador.novoPagador().comNome("Oferta para Jerusalém");
+	Pagador pagador = Pagador.novoPagador().comNome("Oferta Voluntária");
 
 	Banco banco = new BancoDoBrasil();
 	List<Boleto> boletos = new ArrayList<Boleto>();
@@ -57,7 +57,7 @@ public class BoletoFactory {
 		    .novoBeneficiario()
 		    .comNomeBeneficiario("Associação Amigos de Jerusalém - ICEJBRASIL")
 		    .comAgencia("2905").comDigitoAgencia("X")
-		    .comCodigoBeneficiario("28624").comDigitoCodigoBeneficiario("9")
+		    .comCodigoBeneficiario("71905").comDigitoCodigoBeneficiario("6")
 		    .comNumeroConvenio("2862649")
 		    .comCarteira("17")
 		    .comNossoNumero("2862649"+StellaStringUtils.leftPadWithZeros(b.getId().toString(), 4));
