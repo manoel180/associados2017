@@ -6,7 +6,7 @@
 	<groupId>br.com.associados</groupId>
 	<artifactId>associados</artifactId>
 	<version>0.0.1</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>associados</name>
 	<description>Sistema para geração de boletos</description>
