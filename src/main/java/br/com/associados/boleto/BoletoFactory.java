@@ -56,12 +56,12 @@ public class BoletoFactory {
 	    // Quem emite o boleto
 	    Beneficiario beneficiario = Beneficiario
 		    .novoBeneficiario()
-		    .comNomeBeneficiario("PRIMEIRA IGREJA BATISTA DA RESTAURAÇÃO EM MANAUS")
+		    .comNomeBeneficiario("Associação Amigos de Jerusalém - ICEJBRASIL")
 		    .comAgencia("2905").comDigitoAgencia("X")
-		    .comCodigoBeneficiario("22234").comDigitoCodigoBeneficiario("8")
-		    .comNumeroConvenio("2195571")
+		    .comCodigoBeneficiario("28624").comDigitoCodigoBeneficiario("9")
+		    .comNumeroConvenio("2862649")
 		    .comCarteira("17")
-		    .comNossoNumero("2195571"+StellaStringUtils.leftPadWithZeros(b.getId().toString(), 4));
+		    .comNossoNumero("2862649"+StellaStringUtils.leftPadWithZeros(b.getId().toString(), 4));
 
 	    boleto = Boleto
 		    .novoBoleto()
@@ -72,7 +72,7 @@ public class BoletoFactory {
 		    .comNumeroDoDocumento(b.getId().toString())
 		    .comInstrucoes(pagador.getNome())
 		    .comLocaisDePagamento(
-			    "Pagável em qualquer Banco até o vencimento")
+			    "Pagável em qualquer agência bancária até o vencimento")
 		    .comDatas(
 			    Datas.novasDatas()
 				    //.comDocumento(Calendar.getInstance())
