@@ -4,15 +4,15 @@ var sysconferApp = angular.module('sysconferApp', [ 'ngRoute','ngAnimate', 'ngMa
 sysconferApp.config(function($routeProvider) {
     $routeProvider
     .when('/', {
-        templateUrl: '/pages/gerarCarnes/carneLote.html',
+        templateUrl: '/templates/pages/gerarCarnes/carneLote.html',
         controller: 'carneLoteController'
     })
     .when('/login', {
-        templateUrl: '/pages/login.html',
+        templateUrl: '/templates/pages/login.html',
         controller: 'loginController'
     })
     .when('/carneLote', {
-        templateUrl: '/pages/gerarCarnes/carneLote.html',
+        templateUrl: '/templates/pages/gerarCarnes/carneLote.html',
         controller: 'carneLoteController'
     })
 
